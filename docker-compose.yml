@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  idor-prevention-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+
+Remember to follow the instructions for building and running the Docker container:
+
+Instructions for building the Docker image:
+
+```
+docker build -t idor-prevention-app .
+```
+
+Instructions for running the Docker container:
+
+```
+docker run -p 8080:8080 idor-prevention-app
+```
+
+Guidelines for deploying the Docker container in various environments (development, testing, production) can be found in the documentation.
